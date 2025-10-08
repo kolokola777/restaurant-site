@@ -1,6 +1,6 @@
 export const Routers = {
     home: "/restaurant-site",
     cart: "/restaurant-site/cart",
-    restaurant: "restaurant-site/restaurant/",
+    restaurant: "restaurant/",
     login: "/restaurant-site/login"
 }
