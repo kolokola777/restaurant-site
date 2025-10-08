@@ -1,12 +1,13 @@
 import { FaStar } from "react-icons/fa6";
 import { Link } from "react-router"
 import type { RestaurantType } from "../../defaults/restaurant.data";
+import { Routers } from "../../configs/router.config";
 
 export const ListsItem = ({
     category, id, image, price, rating, time, title
 }: Props) => {
     return <li>
-        <Link to={"/restaurant/" + id} className="inline-block w-full">
+        <Link to={Routers.restaurant + id} className="inline-block w-full">
             <div className="rounded-[7px] overflow-hidden bg-white">
                 {/* Img */}
 

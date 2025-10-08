@@ -1,6 +1,6 @@
 export const Routers = {
-    home: "/restaurant",
-    cart: "/restaurant/cart",
-    restaurant: (type: "id" | "hook", id?: number) => type === "hook" ? "/restaurant/:id" : "/restaurant/" + id,
-    login: "/restaurant/login"
+    home: "/restaurant-site",
+    cart: "/restaurant-site/cart",
+    restaurant: "restaurant-site/restaurant/",
+    login: "/restaurant-site/login"
 }

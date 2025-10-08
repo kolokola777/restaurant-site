@@ -12,11 +12,11 @@ export const router = createBrowserRouter([
         Component: App,
         children: [
             {
-                path: "/restaurant",
+                path: "/restaurant-site",
                 Component: HomePage
             },
             {
-                path: "restaurant/:id",
+                path: "restaurant-site/restaurant/:id",
                 Component: RestaurantPage
             },
             {
@@ -24,11 +24,11 @@ export const router = createBrowserRouter([
                 Component: NotFoundPage
             },
             {
-                path: "restaurant/cart",
+                path: "restaurant-site/cart",
                 Component: CartPage
             },
             {
-                path: "restaurant/login",
+                path: "restaurant-site/login",
                 Component: LoginPage
             }
         ],
