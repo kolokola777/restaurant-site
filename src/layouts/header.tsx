@@ -5,6 +5,7 @@ import Logo from "./../assets/logo.svg"
 import { Link } from "react-router"
 import { RiShoppingCart2Line } from "react-icons/ri"
 import { useAuth } from "../stores/auth.store"
+import { Routers } from "../configs/router.config"
 
 export const Header = () => {
     const user = useAuth(state => state.user)
@@ -16,7 +17,7 @@ export const Header = () => {
     >
         <Container>
             <div className="flex items-center justify-between">
-                <Link to={"/"} className="inline-block w-[100px]">
+                <Link to={Routers.home} className="inline-block w-[100px]">
                     <img
                         src={Logo}
                         alt="Логотип"
@@ -29,7 +30,7 @@ export const Header = () => {
                         user.email ? <Button color="blue" onClick={logout}>
                             Выйти
                         </Button>
-                            : <Link to={"/login"}>
+                            : <Link to={Routers.login}>
                                 <Button color="blue">
                                     <GoPerson />
 
@@ -40,7 +41,7 @@ export const Header = () => {
                             </Link>
                     }
 
-                    <Link to={"/cart"}>
+                    <Link to={Routers.cart}>
                         <Button color="white">
                             <RiShoppingCart2Line />
 

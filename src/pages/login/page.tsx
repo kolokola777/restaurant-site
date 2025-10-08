@@ -2,6 +2,7 @@ import type { FormEvent } from "react"
 import { useAuth } from "../../stores/auth.store"
 import { Container } from "../../widgets/container"
 import { useNavigate } from "react-router"
+import { Routers } from "../../configs/router.config"
 
 export const LoginPage = () => {
 
@@ -26,7 +27,7 @@ export const LoginPage = () => {
             password
         })
 
-        navigate("/");
+        navigate(Routers.home);
     }
 
     return <Container>
